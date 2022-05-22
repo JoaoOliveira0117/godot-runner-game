@@ -23,8 +23,6 @@ func _physics_process(delta):
 	velocity.x = move_speed
 	velocity = move_and_slide(velocity, Vector2.UP, true)
 	
-	print(coins)
-	
 	var floor_normal = get_floor_normal().angle()
 	var offset = deg2rad(90)
 	
