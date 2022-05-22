@@ -75,3 +75,15 @@ shape = SubResource( 4 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="raycasts" type="Node2D" parent="."]
+
+[node name="ray_down_l" type="RayCast2D" parent="raycasts"]
+position = Vector2( -4, 11 )
+enabled = true
+cast_to = Vector2( 0, 2 )
+
+[node name="ray_down_r" type="RayCast2D" parent="raycasts"]
+position = Vector2( 4, 11 )
+enabled = true
+cast_to = Vector2( 0, 2 )
