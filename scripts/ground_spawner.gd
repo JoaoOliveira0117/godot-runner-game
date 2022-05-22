@@ -3,10 +3,11 @@ extends Node2D
 var is_level_start = true
 
 const segments = [
-	preload("res://scenes/ground/segments/segment_1.tscn"),
-	preload("res://scenes/ground/segments/segment_2.tscn"),
-	preload("res://scenes/ground/segments/segment_3.tscn"),
-	preload("res://scenes/ground/segments/segment_4.tscn")
+	#preload("res://scenes/ground/segments/segment_1.tscn"),
+	#preload("res://scenes/ground/segments/segment_2.tscn"),
+	#preload("res://scenes/ground/segments/segment_3.tscn"),
+	#preload("res://scenes/ground/segments/segment_4.tscn"),
+	preload("res://scenes/ground/segments/segment_5.tscn")
 ]
 
 const segment_width = 384
