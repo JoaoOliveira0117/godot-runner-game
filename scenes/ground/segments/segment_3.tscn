@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/world/grass-ground_3.png" type="Texture" id=1]
 [ext_resource path="res://scripts/segment_1.gd" type="Script" id=2]
 [ext_resource path="res://scenes/ground/fallzone.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/collectables/butterfly.tscn" type="PackedScene" id=4]
 
 [node name="segment" type="Node2D"]
 script = ExtResource( 2 )
@@ -22,3 +23,6 @@ polygon = PoolVector2Array( 217, 140, 220, 147, 226, 152, 227, 159, 226, 164, 22
 
 [node name="fallzone" parent="staticbody/collision2" instance=ExtResource( 3 )]
 position = Vector2( 2, 190 )
+
+[node name="butterfly" parent="." instance=ExtResource( 4 )]
+position = Vector2( 187, 86 )

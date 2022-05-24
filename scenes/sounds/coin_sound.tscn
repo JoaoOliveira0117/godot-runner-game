@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/sounds/coin.wav" type="AudioStream" id=1]
+[ext_resource path="res://scripts/sound_on_finish_queue_free.gd" type="Script" id=2]
+
+[node name="coin_sound" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+autoplay = true
+script = ExtResource( 2 )
